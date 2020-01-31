@@ -32,6 +32,7 @@
 #ifndef CSV_H
 #define CSV_H
 
+
 #include <vector>
 #include <string>
 #include <cstring>
@@ -48,6 +49,11 @@
 #include <cassert>
 #include <cerrno>
 #include <istream>
+#ifdef max
+#undef max
+#undef min
+#include <limits>
+#endif
 
 namespace io{
         ////////////////////////////////////////////////////////////////////////////
